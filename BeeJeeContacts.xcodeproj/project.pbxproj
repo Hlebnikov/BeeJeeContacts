@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F61A2E320407C8500FA0456 /* testContacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F61A2E12040755200FA0456 /* testContacts.json */; };
 		1F8E05792040141600DAE212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E05782040141600DAE212 /* AppDelegate.swift */; };
 		1F8E057B2040141600DAE212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E057A2040141600DAE212 /* ViewController.swift */; };
 		1F8E057E2040141600DAE212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8E057C2040141600DAE212 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		1F8E059D204018B900DAE212 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E059C204018B900DAE212 /* Contact.swift */; };
 		1F8E05A020401ADE00DAE212 /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F8E059F20401ADE00DAE212 /* contacts.json */; };
 		1FC88601204022AC000FF760 /* ContactsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC88600204022AC000FF760 /* ContactsStore.swift */; };
+		1FC8860320402CCA000FF760 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC8860220402CCA000FF760 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F61A2E12040755200FA0456 /* testContacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testContacts.json; sourceTree = "<group>"; };
 		1F8E05752040141600DAE212 /* BeeJeeContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeJeeContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8E05782040141600DAE212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F8E057A2040141600DAE212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +47,7 @@
 		1F8E059F20401ADE00DAE212 /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
 		1F8E05A320401ED500DAE212 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FC88600204022AC000FF760 /* ContactsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsStore.swift; sourceTree = "<group>"; };
+		1FC8860220402CCA000FF760 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				1F8E059F20401ADE00DAE212 /* contacts.json */,
+				1F61A2E12040755200FA0456 /* testContacts.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				1FC88600204022AC000FF760 /* ContactsStore.swift */,
+				1FC8860220402CCA000FF760 /* CoreDataManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 				1F8E05862040141600DAE212 /* LaunchScreen.storyboard in Resources */,
 				1F8E05832040141600DAE212 /* Assets.xcassets in Resources */,
 				1F8E057E2040141600DAE212 /* Main.storyboard in Resources */,
+				1F61A2E320407C8500FA0456 /* testContacts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +250,7 @@
 				1FC88601204022AC000FF760 /* ContactsStore.swift in Sources */,
 				1F8E05792040141600DAE212 /* AppDelegate.swift in Sources */,
 				1F8E05812040141600DAE212 /* BeeJeeContacts.xcdatamodeld in Sources */,
+				1FC8860320402CCA000FF760 /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

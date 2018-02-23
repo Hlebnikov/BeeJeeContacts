@@ -1,0 +1,13 @@
+[
+	{
+		"contactID": 123,
+		"firstName": "Тест",
+		"lastName": "Тестов",
+		"phoneNumber": "999999999",
+		"streetAddress1": "street1",
+		"streetAddress2": "street2",
+		"city": "city",
+		"state": "state",
+		"zipCode": "123456"
+	}
+]
