@@ -1,0 +1,112 @@
+[
+	{
+		"contactID": 0,
+		"firstName": "John",
+		"lastName": "Appleseed",
+		"phoneNumber": "8433523454",
+		"streetAddress1": "",
+		"streetAddress2": "",
+		"city": "Cupertino",
+		"state": "California",
+		"zipCode": "2345678"
+	},
+	{
+		"contactID": 1,
+		"firstName": "John",
+		"lastName": "Appleseed",
+		"phoneNumber": "8433523454",
+		"streetAddress1": "",
+		"streetAddress2": "",
+		"city": "Cupertino",
+		"state": "California",
+		"zipCode": "2345678"
+	},
+	{
+		"contactID": 2,
+		"firstName": "John",
+		"lastName": "Appleseed",
+		"phoneNumber": "8433523454",
+		"streetAddress1": "",
+		"streetAddress2": "",
+		"city": "Cupertino",
+		"state": "California",
+		"zipCode": "2345678"
+	},
+		{
+		"contactID": 3,
+		"firstName": "John",
+		"lastName": "Appleseed",
+		"phoneNumber": "8433523454",
+		"streetAddress1": "",
+		"streetAddress2": "",
+		"city": "Cupertino",
+		"state": "California",
+		"zipCode": "2345678"
+	},
+		{
+		"contactID": 4,
+		"firstName": "John",
+		"lastName": "Appleseed",
+		"phoneNumber": "8433523454",
+		"streetAddress1": "",
+		"streetAddress2": "",
+		"city": "Cupertino",
+		"state": "California",
+		"zipCode": "2345678"
+	},
+		{
+		"contactID": 5,
+		"firstName": "John",
+		"lastName": "Appleseed",
+		"phoneNumber": "8433523454",
+		"streetAddress1": "",
+		"streetAddress2": "",
+		"city": "Cupertino",
+		"state": "California",
+		"zipCode": "2345678"
+	},
+		{
+		"contactID": 6,
+		"firstName": "John",
+		"lastName": "Appleseed",
+		"phoneNumber": "8433523454",
+		"streetAddress1": "",
+		"streetAddress2": "",
+		"city": "Cupertino",
+		"state": "California",
+		"zipCode": "2345678"
+	},
+		{
+		"contactID": 7,
+		"firstName": "John",
+		"lastName": "Appleseed",
+		"phoneNumber": "8433523454",
+		"streetAddress1": "",
+		"streetAddress2": "",
+		"city": "Cupertino",
+		"state": "California",
+		"zipCode": "2345678"
+	},
+		{
+		"contactID": 8,
+		"firstName": "John",
+		"lastName": "Appleseed",
+		"phoneNumber": "8433523454",
+		"streetAddress1": "",
+		"streetAddress2": "",
+		"city": "Cupertino",
+		"state": "California",
+		"zipCode": "2345678"
+	},
+		{
+		"contactID": 9,
+		"firstName": "John",
+		"lastName": "Appleseed",
+		"phoneNumber": "8433523454",
+		"streetAddress1": "",
+		"streetAddress2": "",
+		"city": "Cupertino",
+		"state": "California",
+		"zipCode": "2345678"
+	}
+]

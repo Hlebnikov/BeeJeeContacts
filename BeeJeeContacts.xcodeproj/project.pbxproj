@@ -14,6 +14,9 @@
 		1F8E05832040141600DAE212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8E05822040141600DAE212 /* Assets.xcassets */; };
 		1F8E05862040141600DAE212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8E05842040141600DAE212 /* LaunchScreen.storyboard */; };
 		1F8E05912040141700DAE212 /* BeeJeeContactsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E05902040141700DAE212 /* BeeJeeContactsTests.swift */; };
+		1F8E059D204018B900DAE212 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E059C204018B900DAE212 /* Contact.swift */; };
+		1F8E05A020401ADE00DAE212 /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F8E059F20401ADE00DAE212 /* contacts.json */; };
+		1FC88601204022AC000FF760 /* ContactsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC88600204022AC000FF760 /* ContactsStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +37,13 @@
 		1F8E05802040141600DAE212 /* BeeJeeContacts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeeJeeContacts.xcdatamodel; sourceTree = "<group>"; };
 		1F8E05822040141600DAE212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F8E05852040141600DAE212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1F8E05872040141600DAE212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F8E058C2040141700DAE212 /* BeeJeeContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeeJeeContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8E05902040141700DAE212 /* BeeJeeContactsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeeJeeContactsTests.swift; sourceTree = "<group>"; };
 		1F8E05922040141700DAE212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F8E059C204018B900DAE212 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		1F8E059F20401ADE00DAE212 /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
+		1F8E05A320401ED500DAE212 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC88600204022AC000FF760 /* ContactsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +71,9 @@
 				1F8E058F2040141700DAE212 /* BeeJeeContactsTests */,
 				1F8E05762040141600DAE212 /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		1F8E05762040141600DAE212 /* Products */ = {
 			isa = PBXGroup;
@@ -79,12 +87,15 @@
 		1F8E05772040141600DAE212 /* BeeJeeContacts */ = {
 			isa = PBXGroup;
 			children = (
+				1FC885FF20402294000FF760 /* Services */,
+				1F8E059E20401AC800DAE212 /* Resources */,
+				1F8E059B204018AB00DAE212 /* Models */,
 				1F8E05782040141600DAE212 /* AppDelegate.swift */,
+				1F8E05A320401ED500DAE212 /* Info.plist */,
 				1F8E057A2040141600DAE212 /* ViewController.swift */,
-				1F8E057C2040141600DAE212 /* Main.storyboard */,
 				1F8E05822040141600DAE212 /* Assets.xcassets */,
+				1F8E057C2040141600DAE212 /* Main.storyboard */,
 				1F8E05842040141600DAE212 /* LaunchScreen.storyboard */,
-				1F8E05872040141600DAE212 /* Info.plist */,
 				1F8E057F2040141600DAE212 /* BeeJeeContacts.xcdatamodeld */,
 			);
 			path = BeeJeeContacts;
@@ -97,6 +108,30 @@
 				1F8E05922040141700DAE212 /* Info.plist */,
 			);
 			path = BeeJeeContactsTests;
+			sourceTree = "<group>";
+		};
+		1F8E059B204018AB00DAE212 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F8E059C204018B900DAE212 /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F8E059E20401AC800DAE212 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F8E059F20401ADE00DAE212 /* contacts.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1FC885FF20402294000FF760 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1FC88600204022AC000FF760 /* ContactsStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8E05A020401ADE00DAE212 /* contacts.json in Resources */,
 				1F8E05862040141600DAE212 /* LaunchScreen.storyboard in Resources */,
 				1F8E05832040141600DAE212 /* Assets.xcassets in Resources */,
 				1F8E057E2040141600DAE212 /* Main.storyboard in Resources */,
@@ -202,7 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8E059D204018B900DAE212 /* Contact.swift in Sources */,
 				1F8E057B2040141600DAE212 /* ViewController.swift in Sources */,
+				1FC88601204022AC000FF760 /* ContactsStore.swift in Sources */,
 				1F8E05792040141600DAE212 /* AppDelegate.swift in Sources */,
 				1F8E05812040141600DAE212 /* BeeJeeContacts.xcdatamodeld in Sources */,
 			);
