@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  BeeJeeContacts
+
+  Created by Aleksandr X on 24.02.18.
+  Copyright © 2018 Khlebnikov. All rights reserved.
+*/
+
+"Contacts" = "Contacts";
+"Add" = "New";
+"Delete" = "Delete";
+"Edit" = "Edit";
+"Cancel" = "Cancel";
+
+"phone" = "Phone";
+"name" = "Name";
+"surname" = "Surname";
+"city" = "City";
+"state" = "State";
+"address1" = "Address 1";
+"address2" = "Address 2";
+"zipCode" = "Zip code";
+
+"Error" = "Error";
+"SaveContactErrorMessage" = "Saving is failed";
+"DeleteContactErrorMessage" = "Deleting is failed";
+"DeleteErrorMessage" = "The contact failed to delete";
+"AddContactErrorMessage" = "The contact failed to adding";
+
+"Contacts" = "Contacts";
+"Other" = "Other";

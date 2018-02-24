@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  BeeJeeContacts
+
+  Created by Aleksandr X on 24.02.18.
+  Copyright © 2018 Khlebnikov. All rights reserved.
+*/
+
+"Contacts" = "Контакты";
+"Add" = "Новый";
+"Delete" = "Удалить";
+"Edit" = "Редактировать";
+"Cancel" = "Отмена";
+
+"phone" = "Телефон";
+"name" = "Имя";
+"surname" = "Фамилия";
+"city" = "Город";
+"state" = "Область";
+"address1" = "Адрес 1";
+"address2" = "Адрес 2";
+"zipCode" = "Индекс";
+
+"Error" = "Ошибка";
+"SaveContactErrorMessage" = "Сохранить не удалось";
+"DeleteContactErrorMessage" = "Удалить не удалось";
+"DeleteErrorMessage" = "Контакт не был удален";
+"AddContactErrorMessage" = "При добавлении контакта возникла ошибка";
+
+"Other" = "Прочее";

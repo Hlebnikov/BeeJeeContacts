@@ -57,11 +57,11 @@ class ContactDetailsViewController: UIViewController, ContactDetailsPresenterOut
   private func units(from contact: Contact) -> [(cellType: ContactDetailsCellProtocol.Type, model: ContactDetailsCellModel)] {
     var units = [(cellType: ContactDetailsCellProtocol.Type, model: ContactDetailsCellModel)]()
     units.append((OneLineTableViewCell.self, OneLineCellModel(title: contact.phoneNumber)))
-    units.append((cellType: SubtitledTableViewCell.self, model: SubtitledCellModel(title: "City".localized, subtitle: contact.city ?? "")))
-    units.append((cellType: SubtitledTableViewCell.self, model: SubtitledCellModel(title: "State".localized, subtitle: contact.state ?? "")))
-    units.append((cellType: SubtitledTableViewCell.self, model: SubtitledCellModel(title: "Address 1".localized, subtitle: contact.streetAddress1 ?? "")))
-    units.append((cellType: SubtitledTableViewCell.self, model: SubtitledCellModel(title: "Address 2".localized, subtitle: contact.streetAddress2 ?? "")))
-    units.append((cellType: SubtitledTableViewCell.self, model: SubtitledCellModel(title: "Zip code".localized, subtitle: contact.zipCode ?? "")))
+    units.append((cellType: SubtitledTableViewCell.self, model: SubtitledCellModel(title: "city".localized, subtitle: contact.city ?? "")))
+    units.append((cellType: SubtitledTableViewCell.self, model: SubtitledCellModel(title: "state".localized, subtitle: contact.state ?? "")))
+    units.append((cellType: SubtitledTableViewCell.self, model: SubtitledCellModel(title: "address1".localized, subtitle: contact.streetAddress1 ?? "")))
+    units.append((cellType: SubtitledTableViewCell.self, model: SubtitledCellModel(title: "address2".localized, subtitle: contact.streetAddress2 ?? "")))
+    units.append((cellType: SubtitledTableViewCell.self, model: SubtitledCellModel(title: "zipCode".localized, subtitle: contact.zipCode ?? "")))
 
     return units
   }

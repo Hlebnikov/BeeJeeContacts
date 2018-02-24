@@ -32,7 +32,7 @@ class ContactDetailsFooter: UIView {
     addSubview(view)
     
     deleteButton.setTitle("Delete".localized, for: .normal)
-    editButton.setTitle("Edit", for: .normal)
+    editButton.setTitle("Edit".localized, for: .normal)
   }
   
   private func loadViewFromNib() -> UIView {

@@ -30,7 +30,7 @@ class ContactsListViewController: UIViewController, ContactsListPresenterOutput 
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    title = "Контакты"
+    title = "Contacts".localized
 
     contactsTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     contactsTable.dataSource = self
