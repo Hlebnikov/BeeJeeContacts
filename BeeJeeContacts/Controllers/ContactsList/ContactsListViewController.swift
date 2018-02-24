@@ -35,6 +35,10 @@ class ContactsListViewController: UIViewController, ContactsListPresenterOutput 
     contactsTable.delegate = self
     
     title = "Контакты"
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
     presenter.update()
   }
   

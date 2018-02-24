@@ -22,14 +22,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Картошка" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfK-V4-jDm">
-                    <rect key="frame" x="16" y="50" width="343" height="23"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <rect key="frame" x="16" y="45.5" width="343" height="27.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дешевая" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lFY-cp-qPm">
-                    <rect key="frame" x="16" y="16" width="343" height="23"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <rect key="frame" x="16" y="16" width="343" height="27.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -38,10 +38,8 @@
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lFY-cp-qPm" secondAttribute="trailing" constant="16" id="5Si-RJ-sZv"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hfK-V4-jDm" secondAttribute="trailing" constant="16" id="GsJ-41-6Ds"/>
-                <constraint firstItem="hfK-V4-jDm" firstAttribute="top" secondItem="lFY-cp-qPm" secondAttribute="bottom" constant="11" id="ZPY-Zv-Qgs"/>
                 <constraint firstItem="lFY-cp-qPm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="cqH-Wj-5WW"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hfK-V4-jDm" secondAttribute="bottom" constant="20" id="itV-8i-bF9"/>
-                <constraint firstItem="hfK-V4-jDm" firstAttribute="top" secondItem="lFY-cp-qPm" secondAttribute="bottom" constant="11" id="jR7-cT-ebM"/>
                 <constraint firstItem="hfK-V4-jDm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="lVL-1o-Wer"/>
                 <constraint firstItem="lFY-cp-qPm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="s4m-8H-tg3"/>
             </constraints>

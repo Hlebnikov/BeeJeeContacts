@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol ContactDetailsPresenterInput: class {
-  func saveContact(contact: Contact)
+  func save(contact: Contact)
   func deleteContact()
   func update()
 }
@@ -42,12 +42,14 @@ class ContactsDetailsPresenter: ContactDetailsPresenterInput {
     interface.showContact(contact: contact)
   }
   
-  func saveContact(contact: Contact) {
+  func save(contact: Contact) {
+    self.contact = contact
     do {
       try storage.save(object: contact)
     } catch {
       interface.showAlert(title: "Error".localized, message: "SaveContactErrorMessage".localized)
     }
+    update()
   }
   
   func deleteContact() {

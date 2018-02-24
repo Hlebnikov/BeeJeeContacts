@@ -31,12 +31,14 @@ class ContactDetailsViewController: UIViewController, ContactDetailsPresenterOut
     header.firstName = contact.firstName
     header.lastName = contact.lastName
     
-    footer.onDelete = {
+    footer.onDelete = { [unowned self] in
       self.presenter.deleteContact()
     }
     
-    footer.onEdit = {
-      //
+    footer.onEdit = { [unowned self] in
+      let editVC = EditContactViewController(contact: contact)
+      editVC.delegate = self
+      self.present(UINavigationController(rootViewController: editVC), animated: true, completion: nil)
     }
     
     infoTable.reloadData()
@@ -85,5 +87,15 @@ extension ContactDetailsViewController: UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
     return 120
+  }
+}
+
+extension ContactDetailsViewController: EditContactViewControllerDelegate {
+  func contactEditorDidEdit(contact: Contact) {
+    presenter.save(contact: contact)
+  }
+  
+  func contactEditorDidCancel() {
+    
   }
 }

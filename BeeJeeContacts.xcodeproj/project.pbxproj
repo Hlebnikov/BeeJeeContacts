@@ -24,6 +24,10 @@
 		1F61A30720413F8800FA0456 /* ContactDetailsHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F61A30620413F8800FA0456 /* ContactDetailsHeader.xib */; };
 		1F61A309204143E600FA0456 /* ContactDetailsFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F61A308204143E600FA0456 /* ContactDetailsFooter.swift */; };
 		1F61A30B2041440100FA0456 /* ContactDetailsFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F61A30A2041440100FA0456 /* ContactDetailsFooter.xib */; };
+		1F61A30F20414DEC00FA0456 /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F61A30D20414DEC00FA0456 /* EditContactViewController.swift */; };
+		1F61A31020414DEC00FA0456 /* EditContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F61A30E20414DEC00FA0456 /* EditContactViewController.xib */; };
+		1F61A31420414E0800FA0456 /* EditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F61A31220414E0800FA0456 /* EditTableViewCell.swift */; };
+		1F61A31520414E0800FA0456 /* EditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F61A31320414E0800FA0456 /* EditTableViewCell.xib */; };
 		1F8E05792040141600DAE212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E05782040141600DAE212 /* AppDelegate.swift */; };
 		1F8E057B2040141600DAE212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E057A2040141600DAE212 /* ViewController.swift */; };
 		1F8E057E2040141600DAE212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8E057C2040141600DAE212 /* Main.storyboard */; };
@@ -65,6 +69,10 @@
 		1F61A30620413F8800FA0456 /* ContactDetailsHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailsHeader.xib; sourceTree = "<group>"; };
 		1F61A308204143E600FA0456 /* ContactDetailsFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsFooter.swift; sourceTree = "<group>"; };
 		1F61A30A2041440100FA0456 /* ContactDetailsFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailsFooter.xib; sourceTree = "<group>"; };
+		1F61A30D20414DEC00FA0456 /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
+		1F61A30E20414DEC00FA0456 /* EditContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditContactViewController.xib; sourceTree = "<group>"; };
+		1F61A31220414E0800FA0456 /* EditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTableViewCell.swift; sourceTree = "<group>"; };
+		1F61A31320414E0800FA0456 /* EditTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditTableViewCell.xib; sourceTree = "<group>"; };
 		1F8E05752040141600DAE212 /* BeeJeeContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeJeeContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8E05782040141600DAE212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F8E057A2040141600DAE212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +111,7 @@
 		1F61A2E42040921F00FA0456 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1F61A30C20414DC900FA0456 /* EditContact */,
 				1F61A2F120412EF100FA0456 /* ContactDetails */,
 				1F61A2E52040922E00FA0456 /* ContactsList */,
 			);
@@ -150,6 +159,25 @@
 				1F61A30620413F8800FA0456 /* ContactDetailsHeader.xib */,
 				1F61A308204143E600FA0456 /* ContactDetailsFooter.swift */,
 				1F61A30A2041440100FA0456 /* ContactDetailsFooter.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1F61A30C20414DC900FA0456 /* EditContact */ = {
+			isa = PBXGroup;
+			children = (
+				1F61A31120414DF000FA0456 /* Cells */,
+				1F61A30D20414DEC00FA0456 /* EditContactViewController.swift */,
+				1F61A30E20414DEC00FA0456 /* EditContactViewController.xib */,
+			);
+			path = EditContact;
+			sourceTree = "<group>";
+		};
+		1F61A31120414DF000FA0456 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1F61A31220414E0800FA0456 /* EditTableViewCell.swift */,
+				1F61A31320414E0800FA0456 /* EditTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -322,6 +350,8 @@
 				1F61A2FD204133C400FA0456 /* OneLineTableViewCell.xib in Resources */,
 				1F61A2F520412F1100FA0456 /* ContactDetailsViewController.xib in Resources */,
 				1F61A301204134CE00FA0456 /* SubtitledTableViewCell.xib in Resources */,
+				1F61A31520414E0800FA0456 /* EditTableViewCell.xib in Resources */,
+				1F61A31020414DEC00FA0456 /* EditContactViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +375,7 @@
 				1F61A2EB204092D600FA0456 /* ContactsListPresenter.swift in Sources */,
 				1F8E057B2040141600DAE212 /* ViewController.swift in Sources */,
 				1F61A3032041357100FA0456 /* ContactDetailsCellProtocol.swift in Sources */,
+				1F61A30F20414DEC00FA0456 /* EditContactViewController.swift in Sources */,
 				1F61A2F720412F4900FA0456 /* ContactDetailsPresenter.swift in Sources */,
 				1FC88601204022AC000FF760 /* ContactsStore.swift in Sources */,
 				1F8E05792040141600DAE212 /* AppDelegate.swift in Sources */,
@@ -353,6 +384,7 @@
 				1F61A2E82040927300FA0456 /* ContactsListViewController.swift in Sources */,
 				1F8E05812040141600DAE212 /* BeeJeeContacts.xcdatamodeld in Sources */,
 				1F61A2FC204133C400FA0456 /* OneLineTableViewCell.swift in Sources */,
+				1F61A31420414E0800FA0456 /* EditTableViewCell.swift in Sources */,
 				1F61A30520413F6000FA0456 /* ContactDetailsHeader.swift in Sources */,
 				1FC8860320402CCA000FF760 /* CoreDataManager.swift in Sources */,
 			);
