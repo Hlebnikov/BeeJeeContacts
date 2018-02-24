@@ -30,6 +30,12 @@ class BeeJeeContactsTests: XCTestCase {
         XCTAssert(contact.contactID == 123, "\(contact.contactID)")
         XCTAssert(contact.firstName == "Тест", contact.firstName)
         XCTAssert(contact.lastName == "Тестов", contact.lastName ?? "")
+        XCTAssert(contact.city == "city", contact.city ?? "")
+        XCTAssert(contact.phoneNumber == "999999999", contact.phoneNumber)
+        XCTAssert(contact.streetAddress1 == "street1", contact.streetAddress1 ?? "")
+        XCTAssert(contact.streetAddress2 == "street2", contact.streetAddress2 ?? "")
+        XCTAssert(contact.state == "state", contact.state ?? "")
+        XCTAssert(contact.zipCode == "123456", contact.zipCode ?? "")
       } else {
         XCTFail()
       }

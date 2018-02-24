@@ -140,6 +140,7 @@ class ContactsStorage: Storage {
       managedContact.streetAddress1 = contact.streetAddress1
       managedContact.streetAddress2 = contact.streetAddress2
       managedContact.zipCode = contact.zipCode
+      managedContact.city = contact.city
       return managedContact
     }
     throw ContactsStorageError.savingFailed

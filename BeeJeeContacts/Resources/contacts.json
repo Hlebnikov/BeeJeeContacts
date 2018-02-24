@@ -3,8 +3,8 @@
 		"contactID": 0,
 		"firstName": "John",
 		"lastName": "Appleseed",
-		"phoneNumber": "8433523454",
-		"streetAddress1": "",
+		"phoneNumber": "1–408–996–10–10",
+		"streetAddress1": "One Infinite Loop",
 		"streetAddress2": "",
 		"city": "Cupertino",
 		"state": "California",
@@ -14,12 +14,12 @@
 		"contactID": 1,
 		"firstName": "John",
 		"lastName": "Gregor",
-		"phoneNumber": "8523454",
+		"phoneNumber": "+43 234 32 3445",
 		"streetAddress1": "",
-		"streetAddress2": "",
-		"city": "Cupertino",
-		"state": "California",
-		"zipCode": "2345678"
+		"streetAddress2": "Address 2",
+		"city": "London",
+		"state": "",
+		"zipCode": "0993266"
 	},
 	{
 		"contactID": 2,
@@ -28,19 +28,19 @@
 		"phoneNumber": "632742353",
 		"streetAddress1": "",
 		"streetAddress2": "",
-		"city": "Cupertino",
+		"city": "Hollywood",
 		"state": "California",
 		"zipCode": "2345678"
 	},
 		{
 		"contactID": 3,
-		"firstName": "Adam",
-		"lastName": "Smith",
-		"phoneNumber": "3332211",
-		"streetAddress1": "",
+		"firstName": "Homer",
+		"lastName": "Simpson",
+		"phoneNumber": "555-0113",
+		"streetAddress1": "Evergreen Terrace, 742",
 		"streetAddress2": "",
-		"city": "Cupertino",
-		"state": "California",
+		"city": "Spriengfield",
+		"state": "Oregon",
 		"zipCode": "2345678"
 	},
 		{
@@ -59,10 +59,10 @@
 		"firstName": "Борис",
 		"lastName": "Годунов",
 		"phoneNumber": "4352356643",
-		"streetAddress1": "",
+		"streetAddress1": "Кремль",
 		"streetAddress2": "",
-		"city": "Cupertino",
-		"state": "California",
+		"city": "Москва",
+		"state": "",
 		"zipCode": "2345678"
 	},
 		{
@@ -72,9 +72,9 @@
 		"phoneNumber": "539452343",
 		"streetAddress1": "",
 		"streetAddress2": "",
-		"city": "Cupertino",
-		"state": "California",
-		"zipCode": "2345678"
+		"city": "",
+		"state": "",
+		"zipCode": ""
 	},
 		{
 		"contactID": 7,
@@ -83,9 +83,9 @@
 		"phoneNumber": "43256546543",
 		"streetAddress1": "",
 		"streetAddress2": "",
-		"city": "Cupertino",
-		"state": "California",
-		"zipCode": "2345678"
+		"city": "",
+		"state": "",
+		"zipCode": ""
 	},
 		{
 		"contactID": 8,
@@ -94,19 +94,19 @@
 		"phoneNumber": "8433523454",
 		"streetAddress1": "",
 		"streetAddress2": "",
-		"city": "Cupertino",
-		"state": "California",
-		"zipCode": "2345678"
+		"city": "",
+		"state": "",
+		"zipCode": ""
 	},
 		{
 		"contactID": 9,
 		"firstName": "Дешевая",
 		"lastName": "Картошка",
 		"phoneNumber": "4503234",
-		"streetAddress1": "",
+		"streetAddress1": "рынок",
 		"streetAddress2": "",
-		"city": "Cupertino",
-		"state": "California",
+		"city": "",
+		"state": "",
 		"zipCode": "2345678"
 	}
 ]
