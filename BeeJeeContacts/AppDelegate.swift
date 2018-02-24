@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let contactsViewController = ContactsListViewController()
     let contactsPresenter = ContactsListPresenter(viewController: contactsViewController,
                                                   contactsStorage: ContactsStorage())
-    contactsViewController.setPresenter(presenter: contactsPresenter)
+    contactsViewController.set(presenter: contactsPresenter)
     
     window?.rootViewController = UINavigationController(rootViewController: contactsViewController)
     window?.makeKeyAndVisible()

@@ -10,16 +10,16 @@ import Foundation
 import UIKit
 
 protocol ContactsListPresenterOutput: class {
-  func setPresenter(presenter: (ContactsListPresenterInput))
-  func showContacts(contacts: [Contact])
+  func set(presenter: (ContactsListPresenterInput))
+  func show(contacts: [Contact])
   func showAlert(title: String, message: String)
 }
 
 protocol ContactsListPresenterInput: class {
   func update()
-  func deleteContact(_ contact: Contact)
-  func showContact(_ contact: Contact)
-  func addContact()
+  func delete(contact: Contact)
+  func show(contact: Contact)
+  func add(contact: Contact)
 }
 
 class ContactsListPresenter: NSObject, ContactsListPresenterInput {
@@ -35,10 +35,10 @@ class ContactsListPresenter: NSObject, ContactsListPresenterInput {
   
   func update() {
     contacts = contactsStorage.allObjects
-    interface?.showContacts(contacts: contacts)
+    interface?.show(contacts: contacts)
   }
   
-  func deleteContact(_ contact: Contact) {
+  func delete(contact: Contact) {
     do {
       try contactsStorage.delete(byId: contact.contactID)
     } catch {
@@ -46,7 +46,7 @@ class ContactsListPresenter: NSObject, ContactsListPresenterInput {
     }
   }
   
-  func showContact(_ contact: Contact) {
+  func show(contact: Contact) {
     let viewController = ContactDetailsViewController()
     let presenter = ContactsDetailsPresenter(viewController: viewController,
                                              contact: contact,
@@ -57,11 +57,14 @@ class ContactsListPresenter: NSObject, ContactsListPresenterInput {
     DispatchQueue.main.async {
       self.interface?.show(viewController, sender: nil)
     }
-    
   }
   
-  func addContact() {
-    
+  func add(contact: Contact) {
+    do {
+      try contactsStorage.add(objects: [contact])
+    } catch {
+      interface?.showAlert(title: "Error".localized, message: "AddContactErrorMessage".localized)
+    }
   }
 }
 

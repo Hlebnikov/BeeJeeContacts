@@ -30,11 +30,14 @@ class ContactsListViewController: UIViewController, ContactsListPresenterOutput 
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    title = "Контакты"
+
     contactsTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     contactsTable.dataSource = self
     contactsTable.delegate = self
-    
-    title = "Контакты"
+
+    let addButton = UIBarButtonItem(title: "Add".localized, style: .plain, target: self, action: #selector(addAction))
+    navigationItem.rightBarButtonItem = addButton
   }
   
   override func viewWillAppear(_ animated: Bool) {
@@ -42,11 +45,19 @@ class ContactsListViewController: UIViewController, ContactsListPresenterOutput 
     presenter.update()
   }
   
-  func setPresenter(presenter: (ContactsListPresenterInput)) {
+  @objc
+  private func addAction() {
+    let newContact = Contact(contactID: 0, firstName: "", phoneNumber: "")
+    let editVC = EditContactViewController(contact: newContact)
+    editVC.delegate = self
+    present(UINavigationController(rootViewController: editVC), animated: true, completion: nil)
+  }
+  
+  func set(presenter: (ContactsListPresenterInput)) {
     self.presenter = presenter
   }
   
-  func showContacts(contacts: [Contact]) {
+  func show(contacts: [Contact]) {
     sections = splitByAlphabet(contacts: contacts)
     contactsTable.reloadData()
   }
@@ -104,6 +115,16 @@ extension ContactsListViewController: UITableViewDataSource {
 extension ContactsListViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     let selectedContact = sections[indexPath.section].contacts[indexPath.row]
-    presenter.showContact(selectedContact)
+    presenter.show(contact: selectedContact)
+  }
+}
+
+extension ContactsListViewController: EditContactViewControllerDelegate {
+  func contactEditorDidEdit(contact: Contact) {
+    presenter.add(contact: contact)
+  }
+  
+  func contactEditorDidCancel() {
+    
   }
 }
