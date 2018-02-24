@@ -32,7 +32,8 @@ class ContactsListViewController: UIViewController, ContactsListPresenterOutput 
     super.viewDidLoad()
     contactsTable.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     contactsTable.dataSource = self
-
+    contactsTable.delegate = self
+    
     title = "Контакты"
     presenter.update()
   }
@@ -42,7 +43,17 @@ class ContactsListViewController: UIViewController, ContactsListPresenterOutput 
   }
   
   func showContacts(contacts: [Contact]) {
-    sections = []
+    sections = splitByAlphabet(contacts: contacts)
+    contactsTable.reloadData()
+  }
+  
+  func showAlert(title: String, message: String) {
+    let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+    present(alertController, animated: true, completion: nil)
+  }
+  
+  private func splitByAlphabet(contacts: [Contact]) -> [ContactsSection] {
+    var sections: [ContactsSection] = []
     let alphabet = "абвгдежзийклмнопрстуфхцчшщыюяabcdefghijklmnoprstuvxyz"
     for symbol in alphabet {
       let contacts = contacts.filter({ $0.firstName.lowercased().first == symbol })
@@ -51,12 +62,15 @@ class ContactsListViewController: UIViewController, ContactsListPresenterOutput 
         sections.append(section)
       }
     }
-    contactsTable.reloadData()
-  }
-  
-  func showAlert(title: String, message: String) {
-    let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-    present(alertController, animated: true, completion: nil)
+    let other = contacts.filter({ contact in
+      if let firstLetter = contact.firstName.lowercased().first {
+        return !alphabet.contains(firstLetter)
+      }
+      return true
+    })
+    let section = ContactsSection(header: "Other".localized, contacts: other)
+    sections.append(section)
+    return sections
   }
 }
 
@@ -80,5 +94,12 @@ extension ContactsListViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     return sections[section].header
+  }
+}
+
+extension ContactsListViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let selectedContact = sections[indexPath.section].contacts[indexPath.row]
+    presenter.showContact(selectedContact)
   }
 }

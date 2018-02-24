@@ -17,8 +17,8 @@ protocol ContactsListPresenterOutput: class {
 
 protocol ContactsListPresenterInput: class {
   func update()
-  func deleteContact(withIndex index: Int)
-  func showContact(withIndex index: Int)
+  func deleteContact(_ contact: Contact)
+  func showContact(_ contact: Contact)
   func addContact()
 }
 
@@ -38,20 +38,35 @@ class ContactsListPresenter: NSObject, ContactsListPresenterInput {
     interface?.showContacts(contacts: contacts)
   }
   
-  func deleteContact(withIndex index: Int) {
-    let id = contacts[index].contactID
+  func deleteContact(_ contact: Contact) {
     do {
-      try contactsStorage.delete(byId: id)
+      try contactsStorage.delete(byId: contact.contactID)
     } catch {
-      interface?.showAlert(title: "Ошибка", message: "Не удалось удалить контакт")
+      interface?.showAlert(title: "Error".localized, message: "DeleteErrorMessage".localized)
     }
   }
   
-  func showContact(withIndex index: Int) {
-    //показать информацию
+  func showContact(_ contact: Contact) {
+    let viewController = ContactDetailsViewController()
+    let presenter = ContactsDetailsPresenter(viewController: viewController,
+                                             contact: contact,
+                                             storage: contactsStorage)
+    presenter.delegate = self
+    viewController.setPresenter(presenter: presenter)
+    
+    DispatchQueue.main.async {
+      self.interface?.show(viewController, sender: nil)
+    }
+    
   }
   
   func addContact() {
-    //показать диалог добавления
+    
+  }
+}
+
+extension ContactsListPresenter: ContactDetailsDelegate {
+  func contactDetailsDidDelete(contact: Contact) {
+    update()
   }
 }
