@@ -26,10 +26,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       print("Unknown error while trying parse contacts")
     }
     
+    let contactsViewController = ContactsListViewController()
+    let contactsPresenter = ContactsListPresenter(viewController: contactsViewController,
+                                                  contactsStorage: ContactsStorage())
+    contactsViewController.setPresenter(presenter: contactsPresenter)
     
-    let errorAlert = UIAlertController(title: "Error", message: "sfsdfdgdf", preferredStyle: .alert)
-    window?.addSubview(errorAlert.view)
-    
+    window?.rootViewController = UINavigationController(rootViewController: contactsViewController)
+    window?.makeKeyAndVisible()
+
     return true
   }
   

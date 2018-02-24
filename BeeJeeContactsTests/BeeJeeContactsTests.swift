@@ -72,5 +72,9 @@ class BeeJeeContactsTests: XCTestCase {
       XCTFail()
     }
   }
+  
+  override func tearDown() {
+    storage.reset()
+  }
 }
 

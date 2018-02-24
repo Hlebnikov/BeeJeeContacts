@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1F61A2E320407C8500FA0456 /* testContacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F61A2E12040755200FA0456 /* testContacts.json */; };
+		1F61A2E82040927300FA0456 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F61A2E62040927300FA0456 /* ContactsListViewController.swift */; };
+		1F61A2E92040927300FA0456 /* ContactsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F61A2E72040927300FA0456 /* ContactsListViewController.xib */; };
+		1F61A2EB204092D600FA0456 /* ContactsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F61A2EA204092D600FA0456 /* ContactsListPresenter.swift */; };
 		1F8E05792040141600DAE212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E05782040141600DAE212 /* AppDelegate.swift */; };
 		1F8E057B2040141600DAE212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8E057A2040141600DAE212 /* ViewController.swift */; };
 		1F8E057E2040141600DAE212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F8E057C2040141600DAE212 /* Main.storyboard */; };
@@ -33,6 +36,9 @@
 
 /* Begin PBXFileReference section */
 		1F61A2E12040755200FA0456 /* testContacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testContacts.json; sourceTree = "<group>"; };
+		1F61A2E62040927300FA0456 /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
+		1F61A2E72040927300FA0456 /* ContactsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsListViewController.xib; sourceTree = "<group>"; };
+		1F61A2EA204092D600FA0456 /* ContactsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListPresenter.swift; sourceTree = "<group>"; };
 		1F8E05752040141600DAE212 /* BeeJeeContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeeJeeContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8E05782040141600DAE212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F8E057A2040141600DAE212 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +74,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F61A2E42040921F00FA0456 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1F61A2E52040922E00FA0456 /* ContactsList */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1F61A2E52040922E00FA0456 /* ContactsList */ = {
+			isa = PBXGroup;
+			children = (
+				1F61A2E62040927300FA0456 /* ContactsListViewController.swift */,
+				1F61A2E72040927300FA0456 /* ContactsListViewController.xib */,
+				1F61A2EA204092D600FA0456 /* ContactsListPresenter.swift */,
+			);
+			path = ContactsList;
+			sourceTree = "<group>";
+		};
 		1F8E056C2040141600DAE212 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +115,7 @@
 		1F8E05772040141600DAE212 /* BeeJeeContacts */ = {
 			isa = PBXGroup;
 			children = (
+				1F61A2E42040921F00FA0456 /* Controllers */,
 				1FC885FF20402294000FF760 /* Services */,
 				1F8E059E20401AC800DAE212 /* Resources */,
 				1F8E059B204018AB00DAE212 /* Models */,
@@ -228,6 +253,7 @@
 				1F8E05832040141600DAE212 /* Assets.xcassets in Resources */,
 				1F8E057E2040141600DAE212 /* Main.storyboard in Resources */,
 				1F61A2E320407C8500FA0456 /* testContacts.json in Resources */,
+				1F61A2E92040927300FA0456 /* ContactsListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,9 +272,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F8E059D204018B900DAE212 /* Contact.swift in Sources */,
+				1F61A2EB204092D600FA0456 /* ContactsListPresenter.swift in Sources */,
 				1F8E057B2040141600DAE212 /* ViewController.swift in Sources */,
 				1FC88601204022AC000FF760 /* ContactsStore.swift in Sources */,
 				1F8E05792040141600DAE212 /* AppDelegate.swift in Sources */,
+				1F61A2E82040927300FA0456 /* ContactsListViewController.swift in Sources */,
 				1F8E05812040141600DAE212 /* BeeJeeContacts.xcdatamodeld in Sources */,
 				1FC8860320402CCA000FF760 /* CoreDataManager.swift in Sources */,
 			);
